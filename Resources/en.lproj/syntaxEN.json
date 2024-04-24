@@ -1,0 +1,16 @@
+{
+	"_method_": {},
+	"Test": {
+		"getVersion()": {
+			"Syntax": "**.getVersion**() : Text",
+			"Params": [
+				[
+					"",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	}
+}
