@@ -2,7 +2,6 @@
 <Preferences4D>
 
   <BuildApp>
-    <UseStandardZipFormat>False</UseStandardZipFormat>
     <BuildCompiled>False</BuildCompiled>
     <IncludeAssociatedFolders>True</IncludeAssociatedFolders>
     <BuildComponent>True</BuildComponent>
