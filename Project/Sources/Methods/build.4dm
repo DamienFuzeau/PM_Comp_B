@@ -17,7 +17,7 @@ If (OK=1)
 		var $zipStructure:={}
 		$zipStructure.files:=[]
 		$zipStructure.files.push(Folder("/PACKAGE/Build/Components/"+$componentName+".4dbase"))
-		$zipStructure.password:="123"
+		//$zipStructure.password:="123"
 		var $zip:=ZIP Create archive($zipStructure; $zipFile)
 		//var $zip:=ZIP Create archive(Folder("/PACKAGE/Build/Components/"+$componentName+".4dbase"); $zipFile)
 		
