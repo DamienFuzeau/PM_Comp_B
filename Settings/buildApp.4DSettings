@@ -2,6 +2,7 @@
 <Preferences4D>
 
   <BuildApp>
+    <PackProject>False</PackProject>
     <BuildCompiled>False</BuildCompiled>
     <IncludeAssociatedFolders>True</IncludeAssociatedFolders>
     <BuildComponent>True</BuildComponent>

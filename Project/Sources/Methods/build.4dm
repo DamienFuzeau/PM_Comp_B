@@ -10,7 +10,7 @@ If (OK=1)
 	
 	If (OK=1)
 		var $componentName:=File(Structure file; fk platform path).name
-		var $zipFile:=File("/PACKAGE/Build/Components/"+"WrongName.zip")
+		var $zipFile:=File("/PACKAGE/Build/Components/"+$componentName+".zip")
 		If ($zipFile.exists)
 			$zipFile.delete()
 		End if 
