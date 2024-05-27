@@ -29,7 +29,7 @@ If (OK=1)
 			$ghCreateRelease+=" \""+File($zipFile.platformPath; fk platform path).path+"#"+$zipFile.fullName+"\""
 			$ghCreateRelease+=" --title \"Version "+$version+"\""
 			$ghCreateRelease+=" --notes \"Version "+$version+"\""
-			$ghCreateRelease+=" --latest"
+			//$ghCreateRelease+=" --latest"
 			
 			$worker:=4D.SystemWorker.new("git add ."; $param)
 			$worker.wait(30)
@@ -37,10 +37,10 @@ If (OK=1)
 			$worker.wait(30)
 			$worker:=4D.SystemWorker.new("git push"; $param)
 			$worker.wait(30)
-			$worker:=4D.SystemWorker.new("git tag "+$version; $param)
-			$worker.wait(30)
-			$worker:=4D.SystemWorker.new("git push origin --tags"; $param)
-			$worker.wait(30)
+			//$worker:=4D.SystemWorker.new("git tag "+$version; $param)
+			//$worker.wait(30)
+			//$worker:=4D.SystemWorker.new("git push origin --tags"; $param)
+			//$worker.wait(30)
 			$worker:=4D.SystemWorker.new($ghCreateRelease; $param)
 			$worker.wait(30)
 			
